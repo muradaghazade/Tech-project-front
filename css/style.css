@@ -1,10 +1,28 @@
 body {
     font-family: Arial,Helvetica,sans-serif;
 }
+.main {
+    margin-top: 65px;
+}
 .navbar {
     background-color: white !important;
     border-bottom: 1px solid #e6e6e6e6;
+    position: fixed;
+    width: 100%;
+    z-index:1;
+    top: 0;
 }
+.content {
+    padding: 16px;
+  }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sticky + .content {
+    padding-top: 60px;
+  }
 ::placeholder {
     color: black !important;
 }
